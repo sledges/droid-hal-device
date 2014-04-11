@@ -5,7 +5,7 @@ Before=network.target start-user-session@USER.service bluetooth.service ofono.se
 Conflicts=shutdown.target actdead.target
 
 [Service]
-ExecStart=/usr/bin/setprop droid.late_start trigger_late_start
+ExecStart=/bin/sh -c '/usr/bin/setprop droid.late_start trigger_late_start'
 
 [Install]
 WantedBy=basic.target
