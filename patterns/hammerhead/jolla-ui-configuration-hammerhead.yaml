@@ -1,0 +1,6 @@
+Description: Pattern with UI related packages for hammerhead configurations
+Name: jolla-ui-configuration-hammerhead
+Requires:
+- jolla-ambient-z2.0
+- ambient-icons-closed-z2.0
+Summary: Jolla UI Configuration hammerhead
