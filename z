@@ -1,0 +1,9 @@
+set -e
+DEVICE=hammerhead
+    DEVICE_PRETTY=$(grep "%define device_pretty " droid-hal-$DEVICE.spec | cut -d ' ' -f3-)
+    VENDOR_PRETTY=$(grep "%define vendor_pretty " droid-hal-$DEVICE.spec | cut -d ' ' -f3-)
+    if [[ -z $DEVICE_PRETTY || -z $VENDOR_PRETTY ]]; then
+        echo "ERROR: Can't find device and/or vendor pretty names in ../rpm-monolithic/droid-hal-$DEVICE.spec"
+        exit 1
+    fi
+
