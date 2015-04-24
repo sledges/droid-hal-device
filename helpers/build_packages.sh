@@ -22,7 +22,9 @@ if [ ! -d rpm/dhd ]; then
 fi
 LOCAL_REPO=$ANDROID_ROOT/droid-local-repo/$DEVICE
 rm -rf $LOCAL_REPO/droid-hal-*
-build 
+rm -rf $LOCAL_REPO/droid-config-*
+builddhd
+buildconfigs
 echo "-------------------------------------------------------------------------------"
 
 read -p 'About to perform "Build HA Middleware Packages" HADK chapter. Press Enter to continue.'

@@ -53,11 +53,6 @@ function builddhd() {
       zypper ref
 }
 
-function build() {
-    builddhd
-    buildconfigs
-}
-
 function buildversion() {
     cd hybris/droid-hal-version-$DEVICE
     mb2 -t $VENDOR-$DEVICE-armv7hl \
