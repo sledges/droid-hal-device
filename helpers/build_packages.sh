@@ -13,7 +13,7 @@ if [[ ! -d rpm/helpers && ! -d rpm/dhd ]]; then
 fi
 
 # utilities
-. $ANDROID_ROOT/rpm/helpers/util.sh
+. $ANDROID_ROOT/rpm/dhd/helpers/util.sh
 
 
 if [ ! -d rpm/dhd ]; then
